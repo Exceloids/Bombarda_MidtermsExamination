@@ -8,9 +8,9 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = [
+        $products = array(
             [
-                'name' => 'Smartphone X',
+                'name' => 'Iphone11',
                 'description' => 'High-end smartphone with advanced features.',
                 'price' => 799.99,
             ],
@@ -19,9 +19,8 @@ class ProductController extends Controller
                 'description' => 'True wireless earbuds with noise cancellation.',
                 'price' => 129.99,
             ],
-            // Add more gadgets here...
-        ];
+        );
 
-        return view('products.index', compact('products'));
+        return view('products', compact('products'));
     }
 }
